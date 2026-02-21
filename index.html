@@ -118,10 +118,10 @@ body {
 }
 
 .socials {
-  margin-top: 18px;
+  margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .icon {
@@ -161,21 +161,23 @@ body {
 
 .tooltip {
   position: absolute;
-  bottom: 48px;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -6px);
   background: #111318;
-  padding: 8px 10px;
-  border-radius: 10px;
+  padding: 7px 10px;
+  border-radius: 8px;
   font-size: 0.75rem;
   white-space: nowrap;
   opacity: 0;
-  transform: translateY(6px);
   transition: 0.2s ease;
   box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  pointer-events: none;
 }
 
 .icon:hover .tooltip {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%, 0);
 }
 </style>
 </head>
